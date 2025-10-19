@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="x-icon" href="icon.png">
     <script src="script.js"></script>
+
     <title>Meine Python Programme</title>
 </head>
 
@@ -30,8 +31,10 @@
             <li><a class="links" href="links.html"><img src="link.svg">Links</a></li>
             <li><a class="tipps" href="tipps.html"><img src="glühbirne.svg">Tipps</a></li>
             <li><a class="active-link" aria-current="page" href="python.html"><img width="24" height="24"
-                        src="https://img.icons8.com/ios-filled/50/python.png" alt="python"/>Meine Python Programme</a>
+                        src="https://img.icons8.com/ios-filled/50/python.png" alt="python" />Meine Python Programme</a>
+
             </li>
+            <button id="themeToggleBtn" class="theme-toggle-btn">🌙</button>
         </ul>
     </nav>
     <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
@@ -42,13 +45,14 @@
         Hier findest du einige meiner Python Programme, die du ausprobieren kannst.
     </span>
     <br>
-    <span class="textpygames">
-        Hier siehst du einen Python-Code für einen Gehaltsrechner:
-    </span>
-    <br>
-    <br>
-
     <div class="code">
+        <span class="textpygames">
+            Hier siehst du einen Python-Code für einen Gehaltsrechner:
+        </span>
+        <br>
+        <br>
+
+
         <pre>
     print("Wenn du die Zahlen eigegeben hast drücke Enter. Bitte gebe kein €-Zeichen ein. ")
     stundenlohn = input("Bitte gebe deinen Stundenlohn ein: ")                   # variable
@@ -61,13 +65,14 @@
     print("Beliebige Taste zum Schließen drücken. ")
 </pre>
     </div>
-    <hr>
-    <span class="textpygames">
-        Hier der Python-Code für ein Zahlenraten-Spiel:
-    </span>
-    <br>
-    <br>
+
     <div class="code">
+        <span class="textpygames">
+            Hier der Python-Code für ein Zahlenraten-Spiel:
+        </span>
+        <br>
+        <br>
+
         <pre>
 import random
 geheime_zahl = random.randint(1, 1000)
@@ -90,11 +95,11 @@ for versuche in range(10):
 print(f"Gesucht war die Zahl {geheime_zahl}.")
 </pre>
     </div>
-    <hr>
-    <span class="textpygames">
-        Hier der Python-Code für ein Wecker:
-    </span>
     <div class="code">
+        <span class="textpygames">
+            Hier der Python-Code für ein Wecker:
+        </span>
+
         <pre>
 
 import time
@@ -130,13 +135,14 @@ if _name_ == "__main__":
     alarm_time = input("Schreib die Alarm Zeit (HH:MM:SS): ")
     set_alarm(alarm_time)
               </pre>
-              <hr>
-   <span class="textpygames">
-        Hier der Code für eine digitale Uhr</span>
     </div>
-        <div class="code">
-        
-        <pre>
+    <div class="code">
+        <span class="textpygames">
+            Hier der Code für eine digitale Uhr</span>
+    
+
+
+    <pre>
       import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout
 from PyQt5.QtCore import QTimer, QTime, Qt
@@ -186,11 +192,11 @@ if _name_ == "__main__":
      </pre>
 
     </div>
-    <hr>
-    <span class="textpygames">
-        Python Slotmaschine
-    </span>
-        <div class="code">
+    <div class="code">
+        <span class="textpygames">
+            Python Slotmaschine
+        </span>
+
         <pre>
 
 import random
@@ -351,7 +357,7 @@ if __name__ == '__main__':
 
     main()
      </pre>
-     </div>
+    </div>
     </div>
 
 </body>
