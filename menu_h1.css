@@ -23,60 +23,52 @@
 }
 
 a {
-     text-decoration:none;
-     font-family:"Gowun Dodum", sans-serif;
+  text-decoration: none;
+  font-family: "Gowun Dodum", sans-serif;
 }
- h1 {
-      margin-left: 90px;
-       width:240px;
-      text-shadow: 2px 2px 0 var(--shadow-color-1), 4px 4px 0 var(--shadow-color-2);
-       font-family:"Gowun Dodum", sans-serif;
-
-
+h1 {
+  margin-left: 90px;
+  width: 240px;
+  text-shadow: 2px 2px 0 var(--shadow-color-1), 4px 4px 0 var(--shadow-color-2);
+  font-family: "Gowun Dodum", sans-serif;
 }
 
 body {
-      margin: 0;
-      background-color: var(--page-background);
-      color: var(--accent-color);
-      font-family:"Gowun Dodum", sans-serif;
-      transform: translateY(30px);
-      animation: slideUp 1.5s ease-out forwards;
-
-
+  margin: 0;
+  background-color: var(--page-background);
+  color: var(--accent-color);
+  font-family: "Gowun Dodum", sans-serif;
+  transform: translateY(30px);
+  animation: slideUp 1.5s ease-out forwards;
 }
-.link{
+.link {
   color: var(--text-muted);
 }
 
-
 a:hover {
-    transition: all 0.4s ease-in-out;
-    transform: scale(1.1);
-    text-decoration: underline;
+  transition: all 0.4s ease-in-out;
+  transform: scale(1.1);
+  text-decoration: underline;
 }
-.python{
-    margin-right: 16px;
+.python {
+  margin-right: 16px;
 }
 
 @keyframes header_move {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
 
-from {
-opacity: 0;
-scale: 0.5;
+  to {
+  }
 }
-
-to {
-}
-
-}
-
 
 @keyframes slideUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 nav {
@@ -127,12 +119,12 @@ nav a img {
 nav a.active-link {
   position: relative;
   font-weight: 500;
-  margin: .5em;
+  margin: 0.5em;
   margin: 0.5em 0.5em 0 1em;
 }
 
 nav a.active-link::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -143,7 +135,7 @@ nav a.active-link::after {
 }
 
 nav a:hover::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -203,7 +195,6 @@ nav li {
   transform: scale(0.95);
 }
 #overlay {
-  
   position: fixed;
   inset: 0;
   z-index: 9;
@@ -240,7 +231,7 @@ nav li {
   #open-sidebar-button {
     display: block;
   }
-  
+
   nav {
     position: fixed;
     top: 0;
@@ -257,13 +248,13 @@ nav li {
   nav.show {
     right: 0;
   }
-  
+
   nav.show ~ #overlay {
     display: block;
     backdrop-filter: blur(3px);
     background-color: rgba(0, 0, 0, 0.3);
   }
-  
+
   nav ul {
     width: 100%;
     height: auto;
@@ -291,7 +282,7 @@ nav li {
   }
 
   nav a.active-link::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 50%;
