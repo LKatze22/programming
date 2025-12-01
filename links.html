@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="menu_h1.css">
+  <link rel="stylesheet" href="links.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="x-icon" href="icon.png">
+  <script src="script.js"></script>
+
+  <title>Progammieren Internetseiten</title>
+</head>
+
+<body class="hintergrund">
+  <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false"
+    aria-controls="navbar">
+    <img src="menu.svg" alt="menu">
+  </button>
+  <nav id="navbar">
+    <ul>
+      <li><button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar"><img src="close.svg"
+            alt="close"></button></li>
+      <li class="home-li"><a href="index.html"><img src="home2.svg">Homepage</a></li>
+      <li></li>
+      <li><a class="active-link" aria-current="page" href="links.html"><img src="link.svg">Links</a></li>
+      <li><a class="tipps" href="tipps.html"><img src="glühbirne.svg">Tipps</a></li>
+      <li><a class="anfaenger-projekte" href="anfaenger-projekte.html"><img width="24" height="24" src="code.svg"
+            alt="code" />Anfänger Projekte Code</a></li>
+      <button id="themeToggleBtn" class="theme-toggle-btn">🌙</button>
+    </ul>
+  </nav>
+  <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+
+  <h1>Nützliche Webseiten</h1>
+
+  <div class="text">
+    <h2>Hier findest du Links zu nützlichen Internetseiten zum Thema Programmieren.</h2>
+    <br>
+    <a class="link" href="https://stackoverflow.com/" target="_blank"> Stack Overflow </a>
+    : Ein Forum für Fragen rund um programmieren.
+    <br>
+    <a class="link" href="https://www.planethtml.de/" target="_blank">PlanetHTML.de</a>
+    : regelmäßig neue Tutorials und Downlads der
+    Programmiersprachen HTML und CSS.
+    <br>
+    <a class="link" href="https://wiki.selfhtml.org/" target="_blank">selfhtml</a>
+    : Hier findest du alles über HTML, CSS, Java, CGI und vieles mehr.
+    <br>
+    <a class="link" href="https://validator.w3.org/" target="_blank">validator.w3.org</a>
+    : hier kannst du deinen HTML, XHTML, SMIL, MathML, CSS usw.-Code auf
+    Korrektheit prüfen.<br>
+
+    <a class="link" href="https://fonts.google.com/" target="_blank">Google Fonts</a>
+    : Du kannst hier eine Schriftart für deine Website auswählen.<br>
+    <a class="link" href="https://fonts.google.com/icons" target="_blank">Google Fonts/Icons</a>
+    : Du kannst hier für Icons für deine Website auswählen.<br>
+    <h2> Projekte die ich programmiert habe:</h2>
+    <a class="link" href="https://hatiloyt.github.io/YNYB-homepage/" target="_blank">YNYB Website</a>
+    : Ich habe auch diese Website programmiert.<br>
+  </div>
+</body>
+
+</html>
