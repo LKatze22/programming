@@ -1,26 +1,26 @@
-body, html {
+body,
+html {
   max-width: 100vw;
   overflow-x: hidden;
 }
 .code {
-  
   font-size: 1.2em;
   line-height: 1.5;
   margin: 16px;
 }
 
 .introduction {
- font-size: 1.4em;
+  font-size: 1.4em;
   line-height: 1.5;
   margin: 16px;
   font-weight: bold;
 }
 
-.textpygames{
+.textpygames {
   font-size: 1.2em;
   line-height: 1.5;
   margin: 16px;
-  color: var(--text-muted);
+  color: var(--text-color);
 }
 
 .code {

@@ -2,283 +2,87 @@
 <html lang="de">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="menu_h1.css">
-    <link rel="stylesheet" href="anfaenger-projekte.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="x-icon" href="icon.png">
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="menu_h1.css">
+  <link rel="stylesheet" href="anfaenger-projekte.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="x-icon" href="icon.png">
+  <script src="script.js"></script>
 
-    <title>Anfänger Projekte Code</title>
+  <title>Anfänger Projekte Code</title>
 </head>
 
 <body class="hintergrund">
-    <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false"
-        aria-controls="navbar">
-        <img src="menu.svg" alt="menu">
-    </button>
-    <nav id="navbar">
-        <ul>
-            <li><button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar"><img
-                        src="close.svg" alt="close"></button></li>
-            <li class="home-li"><a href="index.html"><img src="home2.svg">Homepage</a></li>
-            <li></li>
-            <li><a class="links" href="links.html"><img src="link.svg">Links</a></li>
-            <li><a class="tipps" href="tipps.html"><img src="glühbirne.svg">Tipps</a></li>
-            <li><a class="active-link" aria-current="page" href="anfaenger-projekte.html"><img width="24" height="24"
-                        src="code.svg" alt="code" />Anfänger Projekte
-                    Code
-                </a>
+  <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false"
+    aria-controls="navbar">
+    <img src="menu.svg" alt="menu">
+  </button>
+  <nav id="navbar">
+    <ul>
+      <li><button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar"><img src="close.svg"
+            alt="close"></button></li>
+      <li class="home-li"><a href="index.html"><img src="home2.svg">Homepage</a></li>
+      <li></li>
+      <li><a class="links" href="links.html"><img src="link.svg">Links</a></li>
+      <li><a class="tipps" href="tipps.html"><img src="glühbirne.svg">Tipps</a></li>
+      <li><a class="active-link" aria-current="page" href="anfaenger-projekte.html"><img width="24" height="24"
+            src="code.svg" alt="code" />Anfänger Projekte
+          Code
+        </a>
 
-            </li>
-            <button id="themeToggleBtn" class="theme-toggle-btn">🌙</button>
-        </ul>
-    </nav>
-    <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+      </li>
+      <button id="themeToggleBtn" class="theme-toggle-btn">🌙</button>
+    </ul>
+  </nav>
+  <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
 
-    <h1>Anfänger Projekte Code</h1>
+  <h1>Anfänger Projekte Code</h1>
 
-    <span class="introduction">
-        Hier findest du einige meiner Python Programme und Webseiten, zum nachprogrammieren.
+  <span class="introduction">
+    Hier findest du einige meiner Python Programme und Webseiten, zum nachprogrammieren.
+  </span>
+  <br>
+  <div class="code">
+    <span class="textpygames">
+      Hier siehst du einen Python-Code für einen Gehaltsrechner:
     </span>
     <br>
+    <br>
+
+
+    <img src="carbon.svg" style="border-radius: 8px;" alt="codegehaltsrechner">
+  </div>
+
+  <div class="code">
+    <span class="textpygames">
+      Hier der Python-Code für ein Zahlenraten-Spiel:
+    </span>
+    <br>
+    <br>
+
+    <img src="carbon(6).svg" style="border-radius: 8px;" alt="code zahlenraten">
     <div class="code">
-        <span class="textpygames">
-            Hier siehst du einen Python-Code für einen Gehaltsrechner:
-        </span>
-        <br>
-        <br>
+      <span class="textpygames">
+        Hier der Code für eine Schere-Stein-Papier Webseite:
+      </span>
+      <br>
+      <br>
+      <h3>index.html</h3>
+      <img src="carbon(5).svg" style="border-radius: 8px;" alt="code schere stein papier html">
 
+      <h3>
+        styles.css:
+      </h3>
+      <img src="carbon(2).svg" style="border-radius: 8px;" alt="code schere stein papier css">
 
-        <pre>
-    print("Wenn du die Zahlen eigegeben hast drücke Enter. Bitte gebe kein €-Zeichen ein. ")
-    stundenlohn = input("Bitte gebe deinen Stundenlohn ein: ")                   # variable
-    stunden_pro_tag = input("Bitte gebe deine Stunden pro Tag ein: ")            # variable
-    tag = int(stunden_pro_tag)*int(stundenlohn)                                  # variable
-    monat = tag*int(input("Bitte gebe deine Arbeitstage in einem Monat ein: "))  # variable
-    geld_im_jahr = monat*12                                                      # variable
-    print(f"Du verdienst {monat}€ im Monat. ")
-    print(f"Du verdienst {geld_im_jahr}€ im Monat. ")
-    print("Beliebige Taste zum Schließen drücken. ")
-</pre>
-    </div>
+      <h3>script.js:</h3>
 
-    <div class="code">
-        <span class="textpygames">
-            Hier der Python-Code für ein Zahlenraten-Spiel:
-        </span>
-        <br>
-        <br>
-
-        <pre>
-import random
-geheime_zahl = random.randint(1, 1000)
-for versuche in range(10):
-    zahl_geraten = False
-    vorschlag = -1
-    while not zahl_geraten:
-        try:
-            vorschlag = int(input("Gib eine Zahl ein: "))
-            zahl_geraten = True
-        except ValueError:
-            print("Das war kein Integer.")
-    if vorschlag == geheime_zahl:
-        print("Du hast die geheime Zahl erraten! Glückwunsch!")
-        break
-    elif vorschlag > geheime_zahl:
-        print("Es wird eine kleinere Zahl gesucht.")
-    else:
-        print("Es wird eine größere Zahl gesucht.")
-print(f"Gesucht war die Zahl {geheime_zahl}.")
-</pre>
-    </div>
-    <div class="code">
-        <span class="textpygames">
-            Hier der Code für eine Schere-Stein-Papier Webseite:
-        </span>
-        <br>
-        <br>
-
-        <pre><code>
-index.html: 
-
-
-&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-
-&lt;head&gt;
-    &lt;title&gt;Schere-Stein-Papier&lt;/title&gt;
-    &lt;link rel="stylesheet" href="styles.css"&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-    &lt;h1&gt;Schere-Stein-Papier&lt;/h1&gt;
-    &lt;button id="rock-btn" onclick="
-      playGame('rock');
-    "&gt;🪨Stein&lt;/button&gt;
-
-    &lt;button id="paper-btn" onclick="
-      playGame('paper');
-    "&gt;📄Papier&lt;/button&gt;
-    &lt;button id="scissors-btn" onclick="
-      playGame('scissors');
-    "&gt;✂️Schere&lt;/button&gt;
-
-    &lt;button id="reset-btn" onclick="
-      score.wins = 0;
-      score.losses = 0;
-      score.ties = 0;
-      localStorage.removeItem('score');
-    "&gt;Reset Punktestand&lt;/button&gt;&lt;br&gt;
-    <div id="result"></div>
-
-&lt;/body&gt;
-
-&lt;/html&gt;
-
-styles.css:
-#rock-btn {
-  background-color: #ff4d4d;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-#rock-btn:hover {
-  background-color: #e60000;
-}
-#paper-btn {
-  background-color: #4da6ff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-#paper-btn:hover {
-  background-color: #0066cc;
-}
-#scissors-btn {
-  background-color: #4dff4d;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-#scissors-btn:hover {
-  background-color: #00cc00;
-}
-
-#reset-btn {
-  background-color: #808080;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-#reset-btn:hover {
-  background-color: #595959;
-}
-
-body {
-  color: #ffffff;
-  background-color: #2c2f38;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin-top: 50px;
-}
-
-
-script.js:
-
-let score = JSON.parse(localStorage.getItem("score")) || {
-  wins: 0,
-  losses: 0,
-  ties: 0,
-};
-
-function playGame(playerMove) {
-  const computerMove = pickComputerMove();
-
-  let result = "";
-
-  if (playerMove === "scissors") {
-    if (computerMove === "rock") {
-      result = "Du verlierst🙁.";
-    } else if (computerMove === "paper") {
-      result = "Du gewinnst🥳.";
-    } else if (computerMove === "scissors") {
-      result = "Unentschieden😐.";
-    }
-  } else if (playerMove === "paper") {
-    if (computerMove === "rock") {
-      result = "Du gewinnst🥳.";
-    } else if (computerMove === "paper") {
-      result = "Unentschieden😐.";
-    } else if (computerMove === "scissors") {
-      result = "Du verlierst🙁.";
-    }
-  } else if (playerMove === "rock") {
-    if (computerMove === "rock") {
-      result = "Unentschieden😐.";
-    } else if (computerMove === "paper") {
-      result = "Du verlierst🙁.";
-    } else if (computerMove === "scissors") {
-      result = "Du gewinnst🥳.";
-    }
-  }
-
-  if (result === "Du gewinnst🥳.") {
-    score.wins += 1;
-  } else if (result === "Du verlierst🙁.") {
-    score.losses += 1;
-  } else if (result === "Unentschieden😐.") {
-    score.ties += 1;
-  }
-
-  localStorage.setItem("score", JSON.stringify(score));
-
-  document.getElementById(
-    "result"
-  ).textContent = `Du hast ${playerMove} gewählt und der Computer hat ${computerMove} gewählt. ${result}Gesamtpunktestand -
-            Siege: ${score.wins}, Niederlagen: ${score.losses}, Unentschieden: ${score.ties}`;
-}
-
-function pickComputerMove() {
-  const randomNumber = Math.random();
-
-  let computerMove = "";
-
-  if (randomNumber >= 0 && randomNumber < 1 / 3) {
-    computerMove = "rock";
-  } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
-    computerMove = "paper";
-  } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
-    computerMove = "scissors";
-  }
-
-  return computerMove;
-}
-
-
-    
-</code></pre>
+      <img src="carbon(4).svg" style="border-radius: 8px;" alt="code schere stein papier js">
     </div>
 
 </body>
